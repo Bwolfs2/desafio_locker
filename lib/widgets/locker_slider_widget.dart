@@ -84,9 +84,7 @@ class _LockerSliderWidgetState extends State<LockerSliderWidget> {
                       },
                       child: Container(
                         height: 120,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(100)),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
@@ -95,10 +93,15 @@ class _LockerSliderWidgetState extends State<LockerSliderWidget> {
                               height: 10,
                               margin: EdgeInsets.all(15),
                               decoration: BoxDecoration(
-                                  gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [
-                                Color(0xff294583),
-                                Color(0xff0C245A),
-                              ])),
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Color(0xff294583),
+                                    Color(0xff0C245A),
+                                  ],
+                                ),
+                              ),
                             ),
                             CircleAvatar(
                               backgroundColor: isOff ? const Color(0xff2FD89D) : const Color(0xff1F3773),
